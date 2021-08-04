@@ -1,0 +1,60 @@
+/* Réinitiliser la page par défaut */
+
+body{
+
+    /* Paramètre par défaut */
+    font-family: "Roboto", sans-serif;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;   /* pour que le calcul se fasse bien au niveau de nos boites */
+
+    /* On rajoute une Flexbox sur notre body (et tout mettre en colonne) avec hauteur minimum */
+    display: flex;           /* les différents éléments se positionnent les uns à côté des autres */
+    flex-direction: column;
+    min-height: 100vh;     /* on va utiliser 100% de la hauteur perçue par l'utilisateur ==> pour s'adapter à la résolution de l'écarn de l'utilisateur*/
+}
+
+
+header, footer{
+    background-color: #ba0bff;
+    flex-basis: 76px;
+}
+
+
+header{
+    display: flex;  /* les différents éléments se positionnent les uns à côté des autres */
+    justify-content: space-between;
+}
+
+footer{
+    display: flex;  /* les différents éléments se positionnent les uns à côté des autres */
+    justify-content: center; /* centrer sur l'axe horizontale */
+    align-items: center;/* centrer sur l'axe vertical */
+}
+
+main{
+    display: flex;
+    flex-basis: 750px;
+}
+
+section{
+    background-color: red;
+    flex: 4 1 60%;
+}
+
+nav{
+    background-color: yellow;
+    order: -1;
+}
+aside{
+    background-color: green;
+    
+}
+
+aside, nav{
+    flex: 1 2 20%;
+}
+
+
+
+
