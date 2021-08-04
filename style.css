@@ -25,6 +25,27 @@ a {
     font-weight: 500;
 }
 
+h1,h2,h3,h4,h5{ font-weight: 500px; text-transform: capitalize;}
+
+.header_1{
+    font-size: 63px;
+}
+
+.header_2{
+    font-size: 36px;
+}
+
+.center-text{
+    text-align: center;
+}
+
+.ptb1{ padding: 40px 0;}
+
+.container {
+    max-width: 1280px;
+    margin: auto;/* centrer le contenu */
+    overflow: hidden;   /* s'il y a du contenu qui dépasse */
+}
     /* Bouton */
 .btn{
     color: #1d1d1d;
@@ -91,3 +112,27 @@ a {
 
 
 /* ============================== Localisation ==============================  */
+
+.location_section{
+    background-color: #fafafa;
+}
+
+.location_section_top_text{
+    font-size: 39px;
+    font-weight: 700px;
+    padding-bottom: 30px;
+}
+
+
+.locations{
+    display: flex;
+    padding: 16px;
+}
+
+.location{
+    padding: 30px 30px 15px 30px;
+}
+
+.location_text{
+    padding-top: 5px;
+}
